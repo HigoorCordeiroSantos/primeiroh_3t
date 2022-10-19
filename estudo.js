@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@HigoorCordeiroSantos 
-gabicassi
-/
-primeiroh_3t
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-primeiroh_3t/estudo.js /
-@gabicassi
-gabicassi aula 18/10
-Latest commit ba52b23 4 minutes ago
- History
- 1 contributor
-82 lines (72 sloc)  2.52 KB
-
 //alert('Oi, eu sou o alert!')
 //console.log('Oi, eu estou no console');
 //document.write('aula de PC');
@@ -64,19 +37,24 @@ function total(){
     let mes = document.getElementById("mes").value;
     let resultado = 0;
    
-   if(!Number(valor)){
-    alert( "O juros deve ser um número.")   
-    return
-}
-if(!Number(mes)){
-    alert( "O mês deve ser um número.")   
-    return
-}
-if(!Number(juros)){
-    alert( "O valor deve ser um número.")   
-    return
-}
-
+    if (!Number(valor)) {
+        alert("O valor deve ser um número.");
+        document.getElementById("val").value = "";
+        document.getElementById("val").focus();
+        return
+    }
+    if (!Number(juros)) {
+        alert("O valor dos juros deve ser um número.");
+        document.getElementById("ju").value = "";
+        document.getElementById("ju").focus();
+        return
+    }
+    if (!Number(mes)) {
+        alert("A quantide de meses deve ser um número.");
+        document.getElementById("mes").value = "";
+        document.getElementById("mes").focus();
+        return
+    }
 
    
     for(let i = 1; i <= mes; i++){
@@ -107,17 +85,3 @@ function precisa(){
     let r = 180 - (Number(n1) + Number(n2) + Number(n3));
     document.getElementById("resultado").innerHTML = r;
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
